@@ -5,7 +5,7 @@ public class ArrayBilder extends ArrayBilderTest {
 	int calc, maxcalc;
 public List<Integer> arrayMetod(){
 	 List<Integer> anArray = new ArrayList<Integer>();
-	for (int a = 0; a == i; a++);{
+	for (int a = 0; a < i; a++){
 		int  n = rand.nextInt(2);
 		anArray.add(n);
 		if( n == 1 ){

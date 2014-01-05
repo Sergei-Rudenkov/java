@@ -7,6 +7,5 @@ public class ArrayBilderTest {
 		i = scn.nextInt();
 		ArrayBilder maxcalc = new ArrayBilder();
 		System.out.println("The maximum sequence of value (1) is " + maxcalc.arrayMetod() + " " + maxcalc.maxcalc); 
-	}
-  
+	} 
 }
