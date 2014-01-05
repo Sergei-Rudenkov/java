@@ -1,13 +1,13 @@
 import java.util.*;
 public class ArrayBilder extends ArrayBilderTest {
-//	List anArray = new ArrayList();
+	
 	Random rand = new Random();
 	int calc, maxcalc;
-public void arrayMetod(){
-//	anArray = new int[i];
-	for (int a = 0; a <= i; a++);{
-		int  n = rand.nextInt(1);
-//		anArray.add(n);
+public List<Integer> arrayMetod(){
+	 List<Integer> anArray = new ArrayList<Integer>();
+	for (int a = 0; a == i; a++);{
+		int  n = rand.nextInt(2);
+		anArray.add(n);
 		if( n == 1 ){
 			calc++;
 			if (maxcalc < calc){
@@ -15,5 +15,6 @@ public void arrayMetod(){
 			}
 		}else calc = 0;
 	}	
+	return anArray;
 }
 }
