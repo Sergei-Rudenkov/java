@@ -1,0 +1,119 @@
+package calculator;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Reader extends JFrame {
+	JButton plus, minus, multiply, sharing, ok, clear, b1, b2, b3, b4, b5, b6, b7, b8, b9, b0;
+	JLabel value;
+	int i=0, j;
+	String a, b;
+	eHandler handler = new eHandler();
+	
+	public Reader(String s){
+		super(s);
+		setLayout(new FlowLayout());
+		plus = new JButton("+");
+		minus = new JButton("-");
+		multiply = new JButton("*");
+		sharing = new JButton("/");
+		ok = new JButton("Посчитать");
+		value = new JLabel("");
+		b1 = new JButton("1");
+		b2 = new JButton("2");
+		b3 = new JButton("3");
+		b4 = new JButton("4");
+		b5 = new JButton("5");
+		b6 = new JButton("6");
+		b7 = new JButton("7");
+		b8 = new JButton("8");
+		b9 = new JButton("9");
+		b0 = new JButton("0");
+		clear = new JButton("Clear");
+		add(b1);
+		add(b2);
+		add(b3);
+		add(b4);
+		add(b5);
+		add(b6);
+		add(b7);
+		add(b8);
+		add(b9);
+		add(b0);
+		add(plus);
+		add(minus);
+		add(multiply);
+		add(sharing);
+		add(ok);
+		add(clear); 
+		add(value);
+		
+		b1.addActionListener(handler);
+		b2.addActionListener(handler);
+		b3.addActionListener(handler);
+		b4.addActionListener(handler);
+		b5.addActionListener(handler);
+		b6.addActionListener(handler);
+		b7.addActionListener(handler);
+		b8.addActionListener(handler);
+		b9.addActionListener(handler);
+		b0.addActionListener(handler);
+		ok.addActionListener(handler);
+		clear.addActionListener(handler);
+	}
+public class eHandler implements ActionListener{
+	public void actionPerformed(ActionEvent e) {
+		
+		if(e.getSource() == b1){
+			j = j * 10 + 1;		
+		}
+		if(e.getSource() == b2){
+			j = j * 10 + 2;
+		}
+		if(e.getSource() == b3){
+			j = j * 10 + 3;
+		}
+		if(e.getSource() == b4){
+			j = j * 10 + 4;
+		}
+		if(e.getSource() == b5){
+			j = j * 10 + 5;
+		}
+		if(e.getSource() == b6){
+			j = j * 10 + 6;
+		}
+		if(e.getSource() == b7){
+			j = j * 10 + 7;
+		}
+		if(e.getSource() == b8){
+			j = j * 10 + 8;
+		}
+		if(e.getSource() == b9){
+			j = j * 10 + 9;
+		}
+		if(e.getSource() == b0){
+			j = j * 10;
+		}
+		
+		if(e.getSource() == ok){
+		String a = Integer.toString(j);  
+		value.setText(a);
+		}
+		if(e.getSource() == clear){
+	    value.setText(null);
+	    j = 0;
+		}
+		if(e.getSource() == plus){
+			j = i;
+			j = 0;
+			
+		}
+	}
+
+		
+	
+	
+}
+
+}

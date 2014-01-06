@@ -1,0 +1,12 @@
+
+abstract public class Human {
+int age;
+String name;
+int health = 100;
+int tired = 0;
+
+void Live() {
+	health -= 10;
+	tired += 10;
+}
+}
