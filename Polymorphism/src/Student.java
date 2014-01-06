@@ -2,12 +2,11 @@
 public class Student extends Human {
 String marks;
 int year; 
-void Live(){
-	Student std = new Student(); 
-	std.age = 21;
-	std.name = "Sergei";
-	std.year = 3;
-	std.marks = "Good";
+public void Live(){ 
+	this.age = 21;
+	name = "Sergei";
+	year = 3;
+	marks = "Good";
 	health -= 10;
 	tired += 10;
 }

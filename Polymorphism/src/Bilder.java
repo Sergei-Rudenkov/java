@@ -2,12 +2,11 @@
 public class Bilder extends Human {
 	String worker;
 	int childrens; 
-	void Live(){
-		Bilder blr = new Bilder(); 
-		blr.age = 39;
-		blr.name = "Sersz";
-		blr.childrens = 3;
-		blr.worker = "Not Bad";
+	public void Live(){		
+		this.age = 39;
+		this.name = "Sersz";
+		this.childrens = 3;
+		this.worker = "Not Bad";
 		health -= 12;
 		tired += 25;
 	}
