@@ -1,0 +1,15 @@
+package grep;
+import java.util.*;
+public class Scan {
+	String i = null;
+	int times = 0;
+void Scaning() {	
+	do
+	{
+		System.out.println("Веведите строку");
+	Scanner scn = new Scanner(System.in);
+	 i = scn.nextLine();
+	 System.out.println(i);
+	}while ( times < 10);
+}
+}

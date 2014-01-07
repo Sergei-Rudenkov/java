@@ -1,0 +1,10 @@
+package grep;
+
+abstract public class MainClass {
+ static Scan manage = new Scan();
+	public static void main(String[] args) {
+		manage.Scaning();
+
+	}
+
+}
