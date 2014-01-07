@@ -21,7 +21,7 @@ public class Line {
 			Boolean found = s.toLowerCase().contains(word.toLowerCase());
 			if(found){
 			      System.out.println("Keyword matched the string");
-			} else System.out.println("There is no such word, sorry");
+			}
 		}
 	}
 		

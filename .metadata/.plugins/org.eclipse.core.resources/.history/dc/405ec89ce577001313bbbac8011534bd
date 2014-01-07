@@ -18,10 +18,10 @@ public class Line {
 		Iterator<String> it = lines.iterator();
 		while(it.hasNext()) {
 			String s = it.next();
-			Boolean found = s.toLowerCase().contains(word.toLowerCase());
+			Boolean found = Arrays.asList(line.split(" ")).contains(word);
 			if(found){
 			      System.out.println("Keyword matched the string");
-			} else System.out.println("There is no such word, sorry");
+			}
 		}
 	}
 		
