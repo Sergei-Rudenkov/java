@@ -1,0 +1,25 @@
+import java.util.*;
+public class Line {
+Scanner scn = new Scanner(System.in);
+String str;
+	protected void put(){
+		System.out.println("Put a string to sort");
+		str = scn.nextLine();
+		str.toLowerCase();
+	 }
+	 void sort(){
+		 String[] a1 = str.split(" ");
+		 Arrays.sort(a1);
+		 for (String out : a1){
+		 System.out.println(out);
+		 }
+	 }
+	 void sortlenght(){
+		 String[] a2 = str.split(" ");
+		 for (int j=0; j >= a2.length; j++){
+		 for (int i=0; i > a2[j].length(); i++){
+              System.out.println(a2[i]);
+		}
+    }
+  }
+}
