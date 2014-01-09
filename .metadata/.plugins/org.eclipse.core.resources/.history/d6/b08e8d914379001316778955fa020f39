@@ -18,23 +18,24 @@ String [] finalarray = new String [10];
 		 }
 	 }
 
-	 public static void sortbylength(String[] array) {
-		String tempVar;
-		for (int i = 0; i < array.length; i++){			
-			for (int j = i + 1; j < array.length; j++){
-				if (array[i].length() > array[j].length()){
-					tempVar = array[j];
-					array[j] = array[i];
-					array[i] = tempVar;
-					
+	 public static void sortbylength(String[] array, String[] arrayfinal) {
+		for (int i = 0; i < array.length; i++){
+			int smallestValue = array[i].length();
+			int smallestIndex = i;
+			
+			for (int j = i+1; j < array.length; j++){
+				if (smallestValue > array[i].compareTo(array[j])){
+					smallestValue = array[i].compareTo(array[j]);
+					smallestIndex = j;
 				}
-			}			
+			}
+			arrayfinal[i] = array[smallestIndex]; 
 		}   
 	}
 	 void putout(){
 		 String[] a2 = str.split(" ");
-		 sortbylength(a2);
-		 for (String out : a2){
+		 sortbylength(a2, finalarray);
+		 for (String out : finalarray){
 			 System.out.println(out);
 		 }
 	}		
