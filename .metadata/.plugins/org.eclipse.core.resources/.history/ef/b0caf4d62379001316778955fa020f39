@@ -1,0 +1,38 @@
+import java.util.*;
+public class Line {
+Scanner scn = new Scanner(System.in);
+static String str;
+Comparator<String> x = new MyComparator();
+	protected void put(){
+		System.out.println("Put a string to sort");
+		str = scn.nextLine();
+		str.toLowerCase();
+	 }
+	 void sort(){
+		 String[] a1 = str.split(" ");
+		 Arrays.sort(a1);
+		 for (String out : a1){
+		 System.out.println(out);
+		 }
+	 }
+
+	 public static List<String> toList(String[] array) {
+		
+		    if (array==null) {
+		       return new ArrayList<String>(0);
+		    } else {
+		       int size = array.length;
+		       List<String> list = new ArrayList<String>(size);
+		       for(int i = 0; i < size; i++) {
+		          list.add(array[i]);
+		       }
+		       return list;
+		    }
+		}
+	 void putout(){
+		 String[] a2 = str.split(" ");
+		 Collections.sort(toList(a2), x);
+		 System.out.println(x);
+    }
+}
+

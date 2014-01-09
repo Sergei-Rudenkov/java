@@ -1,7 +1,8 @@
 import java.util.*;
 public class Line {
 Scanner scn = new Scanner(System.in);
-String str;
+static String str;
+
 	protected void put(){
 		System.out.println("Put a string to sort");
 		str = scn.nextLine();
@@ -14,12 +15,36 @@ String str;
 		 System.out.println(out);
 		 }
 	 }
-	 void sortlenght(){
-		 String[] a2 = str.split(" ");
-		 for(String out : a2){  
-		 for (int i=0; i > out.length(); i++){
-              System.out.println(out);
+
+	 public static List<String> toList(String[] array) {
+		
+		    if (array==null) {
+		      new ArrayList<String>(0);
+		    } else {
+		       int size = array.length;
+		       List<String> list = new ArrayList<String>(size);
+		       for(int i = 0; i < size; i++) {
+		    	   for (int j = 0; i < size; j++) {
+		    		   for (String r : array) {
+		    			   if (i == r.length()) {
+		    	                list.add(array[i]);
+		    	                array[i] = null;
+		    	            }
+		    	   }
+		         
+		       }
+		    }
+		    }
+			return toList(array);   
 		}
-    }
-}
-}
+	 void putout(){
+		
+		 String[] a2 = str.split(" ");
+		 List<String> list = new ArrayList();
+		 list = toList(a2);
+		 }		
+		
+    }	
+		 
+
+
