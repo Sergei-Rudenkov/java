@@ -2,7 +2,6 @@ import java.util.*;
 public class Line {
 Scanner scn = new Scanner(System.in);
 static String str;
-String [] finalarray = new String [10];
 
 	protected void put(){
 		System.out.println("Put a string to sort");
@@ -18,7 +17,7 @@ String [] finalarray = new String [10];
 		 }
 	 }
 
-	 public static void sortbylength(String[] array, String[] arrayfinal) {
+	 public static void sortbylength(String[] array) {
 		for (int i = 0; i < array.length; i++){
 			int smallestValue = array[i].length();
 			int smallestIndex = i;
@@ -29,17 +28,20 @@ String [] finalarray = new String [10];
 					smallestIndex = j;
 				}
 			}
-			arrayfinal[i] = array[smallestIndex]; 
+			array[smallestIndex] = array[i];
+			array[i] = array[smallestValue]; 
 		}   
 	}
 	 void putout(){
 		 String[] a2 = str.split(" ");
-		 sortbylength(a2, finalarray);
-		 for (String out : finalarray){
+		 sortbylength(a2);
+		 for (String out : a2){
 			 System.out.println(out);
 		 }
-	}		
-}	
+		
+		 }		
+		
+    }	
 		 
 
 

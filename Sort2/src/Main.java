@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class ArrayListSortingExample {
+public class Main {
 
    private static class SmartPhone implements Comparable {
         private String brand;

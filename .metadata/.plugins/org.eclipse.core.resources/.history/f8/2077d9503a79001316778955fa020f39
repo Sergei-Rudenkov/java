@@ -2,7 +2,7 @@ import java.util.*;
 public class Line {
 Scanner scn = new Scanner(System.in);
 static String str;
-String [] finalarray = new String [10];
+String [] finalarray;
 
 	protected void put(){
 		System.out.println("Put a string to sort");
@@ -29,7 +29,8 @@ String [] finalarray = new String [10];
 					smallestIndex = j;
 				}
 			}
-			arrayfinal[i] = array[smallestIndex]; 
+			array[smallestIndex] = array[i];
+			arrayfinal[i] = array[smallestValue]; 
 		}   
 	}
 	 void putout(){

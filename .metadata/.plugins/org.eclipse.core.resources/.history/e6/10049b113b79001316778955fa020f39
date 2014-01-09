@@ -29,7 +29,7 @@ String [] finalarray = new String [10];
 					smallestIndex = j;
 				}
 			}
-			arrayfinal[i] = array[smallestIndex]; 
+			arrayfinal[i] = array[smallestValue]; 
 		}   
 	}
 	 void putout(){
