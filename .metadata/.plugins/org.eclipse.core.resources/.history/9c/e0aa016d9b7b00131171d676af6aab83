@@ -1,0 +1,26 @@
+package epam;
+
+public class Word extends MainClass{
+static String word;
+int num;
+	String create(){
+		  System.out.println("Put word to change");
+		  word = scn.nextLine();
+		  return word;
+		}
+	int createNum(){
+		System.out.println("Put number of a word's symbols you need to change");
+		num = scn.nextInt();
+		return num;
+	}
+	@Override
+	void makeArray() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	String[] changeWord() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
