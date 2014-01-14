@@ -1,0 +1,21 @@
+package chess_engine;
+
+public class Board {
+	int[][] board = new int[8][8];
+	void showBoard(String iKing, String jKing){
+		int KingI;
+		int KingJ;
+		if(iKing != null && jKing != null){
+			KingI = Integer.parseInt(iKing);
+			KingJ = Integer.parseInt(jKing);
+			board[KingI][KingJ]	= 1;
+		}		
+		for (int i = 0; i < 8; i++){
+			for (int j = 0; j < 8; j++){
+				System.out.print(board[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+}
