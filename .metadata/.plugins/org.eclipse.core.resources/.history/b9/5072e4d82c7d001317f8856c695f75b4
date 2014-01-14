@@ -11,12 +11,10 @@ static int tempJ;
 		Board boardObject = new Board();
 		King kingObject = new King();
 		for (int i = 0; i < 2500; i++){
-			while (tempI == coordIntI & tempJ == coordIntJ){
+			while (tempI == coordIntI && tempJ == coordIntJ){
 		coordIntI = kingObject.move(coordStringI);
 		coordIntJ = kingObject.move(coordStringJ);
 			}
-			tempI = coordIntI;
-			tempJ = coordIntJ;
 		coordStringI = Integer.toString(coordIntI);
 		coordStringJ = Integer.toString(coordIntJ);
 		boardObject.showBoard(coordStringI,coordStringJ);
