@@ -18,12 +18,10 @@ static int tempJBl;
 		King kingObject = new King();
 		for (int i = 0; i < 2500; i++){
 			while (tempI == coordIntI & tempJ == coordIntJ & tempIBl == coordIntIBl & tempJBl == coordIntJBl ){
-				do{
 		coordIntI = kingObject.move(coordStringI);
 		coordIntJ = kingObject.move(coordStringJ);
 		coordIntIBl = kingObject.move(coordStringIBl);
 		coordIntJBl = kingObject.move(coordStringJBl);		
-			}while (possible(coordIntI, coordIntJ, coordIntIBl, coordIntJBl) == false);
 			}
 			tempI = coordIntI;
 			tempJ = coordIntJ;
@@ -31,12 +29,10 @@ static int tempJBl;
 			tempJBl = coordIntJBl;
 		coordStringI = Integer.toString(coordIntI);
 		coordStringJ = Integer.toString(coordIntJ);
-		coordStringIBl = Integer.toString(coordIntIBl);
-		coordStringJBl = Integer.toString(coordIntJBl);
 		boardObject.showBoard(coordStringI,coordStringJ,coordStringIBl,coordStringJBl);
 	}
 	}
-	public static boolean possible(int crdIWKing, int crdJWKing, int crdIBKing, int crdJBKing){
+	public boolean possible(int crdIWKing, int crdJWKing, int crdIBKing, int crdJBKing){
 		if (crdIWKing - crdIBKing == 1 || crdIWKing - crdIBKing == -1 ){return false;} 
 		if (crdJWKing - crdJBKing == 1 || crdJWKing - crdJBKing == -1 ){return false;}else {return true;} 	
 	}
