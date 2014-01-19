@@ -2,7 +2,11 @@
 public abstract class MainClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Field exfield = new Field();
+		while (exfield.gameEnd() != true){
+			exfield.makeMoveOnField(Computer.makeMove(), Computer.makeMove(), true);
+			exfield.makeMoveOnField(Computer.makeMove(), Computer.makeMove(), false);
+		}
 
 	}
 
