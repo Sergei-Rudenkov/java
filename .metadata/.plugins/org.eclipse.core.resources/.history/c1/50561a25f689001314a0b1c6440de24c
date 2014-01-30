@@ -9,7 +9,7 @@ public class Board {
                 }
         }
     }
-	void boardShowMove(int[] i, Figure fig){
+	void boardShowMove(int[] i){
 		
 	}
 	static void print(String[][] a){
@@ -25,9 +25,6 @@ public class Board {
 
 	public static void main(String[] args) {
 		Board brd = new Board();
-		King blackKing = new King();
-		King whiteKing = new King();
-		Root whiteRoot = new Root();
 		brd.print(board);
 
 	}

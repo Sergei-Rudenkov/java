@@ -1,9 +1,16 @@
 package chess;
 
 public class King implements Figure{
+	
+	King(){
+		
+	}
+	public Figure move(Figure fig) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-	@Override
-	public int[] move(int i, int j) {
+	public int[][] places(Figure fig) {
 		// TODO Auto-generated method stub
 		return null;
 	}

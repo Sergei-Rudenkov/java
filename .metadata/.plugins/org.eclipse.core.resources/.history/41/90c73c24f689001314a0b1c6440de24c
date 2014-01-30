@@ -9,9 +9,9 @@ public class Root implements Figure {
 		i = rand.nextInt(7);
 		j = rand.nextInt(7);	
 	}
-	public Figure move (Figure fig){
+	public Root move (chess.Root fig){
 		
-		fig.i = rand(7);
+		fig.i = rand(7) || fig.j = rand(7);
 		return fig;
 		
 	}
@@ -20,6 +20,5 @@ public class Root implements Figure {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
  
 }
