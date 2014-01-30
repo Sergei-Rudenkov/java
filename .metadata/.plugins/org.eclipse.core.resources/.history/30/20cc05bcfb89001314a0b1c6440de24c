@@ -1,6 +1,6 @@
 package chess;
 
 public interface Figure {
-	void move ();
+	Figure move (Figure fig);
 	int[][] places(Figure fig); 
 }

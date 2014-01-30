@@ -5,8 +5,9 @@ public class King implements Figure{
 	King(){
 		
 	}
-	public void move() {
+	public Figure move(Figure fig) {
 		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public int[][] places(Figure fig) {

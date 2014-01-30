@@ -1,7 +1,6 @@
 package chess;
 
 public class Board {
-	
 	static String[][] board = new String[8][8];
 	Board(){
         for (int i = 0; i < 8; i++){
@@ -10,8 +9,8 @@ public class Board {
                 }
         }
     }
-	void boardShowMove(Figure fig){
-	//	board[i][j] = "R";
+	void boardShowMove(int[] i, Figure fig){
+		
 	}
 	static void print(String[][] a){
 		for (int i = 0; i < 8; i++){

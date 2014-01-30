@@ -11,7 +11,7 @@ public class Board {
         }
     }
 	void boardShowMove(Figure fig){
-	//	board[i][j] = "R";
+		board[i][j] = "R";
 	}
 	static void print(String[][] a){
 		for (int i = 0; i < 8; i++){
