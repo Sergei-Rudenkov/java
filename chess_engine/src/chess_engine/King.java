@@ -1,7 +1,7 @@
 package chess_engine;
 import java.util.*;
-public class King {
-	int move(String iK){
+public class King implements Figure {
+	public int move(String iK){
 		Random rand = new Random();
 		int coordinateKing;
 		if (iK == null){		   
