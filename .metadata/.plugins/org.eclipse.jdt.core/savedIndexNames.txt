@@ -1,3 +1,18 @@
+<<<<<<< HEAD
 INDEX VERSION 1.126+D:\Sergei_Rudenkov\workspace\.metadata\.plugins\org.eclipse.jdt.core
 3682741512.index
 4145717365.index
+=======
+INDEX VERSION 1.126+/home/rudzik/workspace/.metadata/.plugins/org.eclipse.jdt.core
+2403276098.index
+2120848864.index
+1440861640.index
+4035829876.index
+1691002385.index
+2455725994.index
+2934191681.index
+3984658036.index
+3104846409.index
+4099648560.index
+1018745490.index
+>>>>>>> 0a97d6f7fb79b1e4607f16451e67c8226a2cb597

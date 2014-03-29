@@ -1,0 +1,22 @@
+package chess;
+import java.util.*;
+
+public class Root implements Figure {
+	Random rand = new Random();
+	private int i;
+	private int j;
+	Root(){ 
+		i = rand.nextInt(7);
+		j = rand.nextInt(7);	
+	}
+	public int[] move (Figure fig){
+		
+		return null;
+		
+	}
+	@Override
+	public int[][] places(Figure fig) {
+		// TODO Auto-generated method stub
+		return null;
+	} 
+}

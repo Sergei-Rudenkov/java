@@ -1,0 +1,45 @@
+import java.util.*;
+public class Line {
+Scanner scn = new Scanner(System.in);
+static String str;
+String [] finalarray = new String [10];
+
+	protected void put(){
+		System.out.println("Put a string to sort");
+		str = scn.nextLine();
+		str.toLowerCase();
+		
+	 }
+	 void sort(){
+		 String[] a1 = str.split(" ");
+		 Arrays.sort(a1);
+		 for (String out : a1){
+		 System.out.println(out);
+		 }
+	 }
+
+	 public static void sortbylength(String[] array, String[] arrayfinal) {
+		for (int i = 0; i < array.length; i++){
+			int smallestValue = array[i].length();
+			int smallestIndex = i;
+			
+			for (int j = i; j < array.length; j++){
+				if (smallestValue > array[i].compareTo(array[j])){
+					smallestValue = array[i].compareTo(array[j]);
+					smallestIndex = j;
+				}
+			}
+			arrayfinal[i] = array[smallestIndex]; 
+		}   
+	}
+	 void putout(){
+		 String[] a2 = str.split(" ");
+		 sortbylength(a2, finalarray);
+		 for (String out : finalarray){
+			 System.out.println(out);
+		 }
+	}		
+}	
+		 
+
+

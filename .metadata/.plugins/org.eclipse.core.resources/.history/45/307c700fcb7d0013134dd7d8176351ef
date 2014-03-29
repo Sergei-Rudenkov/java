@@ -1,0 +1,39 @@
+package chess_engine;
+
+public abstract class MainClass {
+static int coordIntI;
+static int coordIntJ;
+static int coordIntIBl;
+static int coordIntJBl;
+static String coordStringI;
+static String coordStringJ;
+static String coordStringIBl;
+static String coordStringJBl;
+static int tempI;
+static int tempJ;
+static int tempIBl;
+static int tempJBl;
+	public static void main(String[] args) {
+		Board boardObject = new Board();
+		King kingObject = new King();
+		for (int i = 0; i < 2500; i++){
+			while (tempI == coordIntI & tempJ == coordIntJ & tempIBl == coordIntIBl & tempJBl == coordIntJBl ){
+		coordIntI = kingObject.move(coordStringI);
+		coordIntJ = kingObject.move(coordStringJ);
+		coordIntIBl = kingObject.move(coordStringIBl);
+		coordIntJBl = kingObject.move(coordStringJBl);		
+			}
+			tempI = coordIntI;
+			tempJ = coordIntJ;
+			tempIBl = coordIntIBl;
+			tempJBl = coordIntJBl;
+		coordStringI = Integer.toString(coordIntI);
+		coordStringJ = Integer.toString(coordIntJ);
+		boardObject.showBoard(coordStringI,coordStringJ,coordStringIBl,coordStringJBl);
+	}
+	}
+	public boolean possible(int crdIWKing, int crdJWKing, int crdIBKing, int crdJBKing){
+		if (crdIWKing - crdIBKing == 1 || crdIWKing - crdIBKing == -1 ){return false;} 
+		if (crdJWKing - crdJBKing == 1 || crdJWKing - crdJBKing == -1 ){return false;}else {return true;} 	
+	}
+}

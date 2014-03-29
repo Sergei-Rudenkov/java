@@ -1,0 +1,6 @@
+package chess;
+
+public interface Figure {
+	int[] Figure(Figure fig);
+	int[][] places(Figure fig); 
+}

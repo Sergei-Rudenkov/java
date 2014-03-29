@@ -1,0 +1,17 @@
+package chess;
+import java.util.*;
+
+public class Root implements Figure {
+	Random rand = new Random();
+	int i;
+	int j;
+	Root(){ 
+		i = rand.nextInt(7);
+		j = rand.nextInt(7);	
+	}
+	public int[] move (int i, int j){
+		
+		return null;
+		
+	} 
+}

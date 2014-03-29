@@ -1,0 +1,10 @@
+import java.util.*;
+public class Check {
+	 Random rand = new Random();
+	public void main(String[] args) {
+		int n = rand.nextInt(1);
+	System.out.println(n);
+
+	}
+
+}

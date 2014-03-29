@@ -1,0 +1,26 @@
+package epam;
+import java.util.*;
+public abstract class MainClass {
+	static protected String word;
+	protected static int num;
+	static String[] arrayText;
+	public Scanner scn = new Scanner(System.in);
+	static Sentence sobj = new Sentence();
+	static Word wobj = new Word();
+	public static void main(String[] arg){
+		ArrayList<MainClass> polimorphism = new ArrayList<MainClass>();
+		polimorphism.add(sobj);
+		polimorphism.add(wobj);
+		for (MainClass x : polimorphism){
+		x.create();	
+		x.createNum();
+		x.makeArray();
+		x.changeWord(num, word);
+		System.out.println(Arrays.toString(arrayText));
+		}			
+	}
+	abstract void create();
+	abstract void makeArray();
+	abstract void changeWord(int num2, String word2);
+	abstract int createNum();
+}

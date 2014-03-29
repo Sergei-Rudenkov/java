@@ -1,0 +1,16 @@
+import java.util.*;
+public class Line {
+Scanner scn = new Scanner(System.in);
+String str;
+	protected void put(){
+		System.out.println("Put a string to sort");
+		str = scn.nextLine(); 
+	 }
+	 void sort(){
+		 String[] a1 = str.split(" ");
+		 System.out.println(a1);
+	 }
+	 void output(){
+		 
+	 }
+}

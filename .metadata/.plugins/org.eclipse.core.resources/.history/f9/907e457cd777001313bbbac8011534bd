@@ -1,0 +1,14 @@
+package grep;
+import java.util.*;
+public class Scan {
+	String i = null;
+	
+void Scaning() {	
+	while ( i != null){
+		System.out.println("Веведите строку, для выхода неберите Exit");
+	Scanner scn = new Scanner(System.in);
+	 i = scn.nextLine();
+	 System.out.println(i);
+	}
+}
+}

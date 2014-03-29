@@ -1,0 +1,23 @@
+package chess_engine;
+import java.util.*;
+public class King {
+	int move(String iK){
+		Random rand = new Random();
+		int coordinateKing;
+		coordinateKing = Integer.parseInt(iK);
+		if (iK == null){		   
+			coordinateKing = rand.nextInt(9);
+		}else{
+			int caseI;
+			switch(caseI = rand.nextInt(2)){
+				case 0: if (coordinateKing < 8){ coordinateKing++; } else {caseI = rand.nextInt(2);}
+				break;
+				case 1: if (coordinateKing > 0){ coordinateKing--; } else {caseI = rand.nextInt(2);}
+				break;
+				default: 
+				break;
+			}			
+		}		
+		return coordinateKing;
+	}
+}

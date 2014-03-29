@@ -1,0 +1,11 @@
+package grep;
+import java.util.*;
+public class Scan {
+
+void Scaning() {
+	String i;
+	Scanner scn = new Scanner(System.in);
+	 i = scn.nextLine();
+	 System.out.println(i);
+}
+}

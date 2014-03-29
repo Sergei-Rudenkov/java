@@ -1,0 +1,9 @@
+package epam;
+
+public class Word extends MainClass{
+static String word;
+	void create(){
+		  System.out.println("Put some kind of text");
+		  word = scn.nextLine();
+		}
+}

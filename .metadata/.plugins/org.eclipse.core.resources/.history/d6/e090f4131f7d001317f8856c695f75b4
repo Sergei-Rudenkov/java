@@ -1,0 +1,10 @@
+package chess_engine;
+
+public abstract class MainClass {
+
+	public static void main(String[] args) {
+		Board boardObject = new Board();
+		boardObject.showBoard();
+	}
+
+}

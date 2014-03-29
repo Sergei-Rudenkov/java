@@ -1,0 +1,14 @@
+
+public class Student extends Human {
+String marks;
+int year; 
+public void Live(){
+	Student std = new Student(); 
+	std.age = 21;
+	std.name = "Sergei";
+	std.year = 3;
+	std.marks = "Good";
+	health -= 10;
+	tired += 10;
+}
+}

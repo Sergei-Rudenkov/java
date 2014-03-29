@@ -1,0 +1,9 @@
+abstract public class MainSortClass {
+	
+	public static void main(String[] args) {
+		Line startprog = new Line();
+		startprog.put();
+	//	startprog.sort();
+		startprog.putout();
+	}
+}
