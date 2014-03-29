@@ -1,0 +1,10 @@
+package com.epam.rudenkov;
+
+public class NumberLength {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

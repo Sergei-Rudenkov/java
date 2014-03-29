@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/BlinouTask1/src/com/epam/rudenkov/NumberLength.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.epam.rudenkov.NumberLength"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="2432423, 234234234, 23423424, 2342342, 32424, 34"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="BlinouTask1"/>
+</launchConfiguration>

@@ -1,0 +1,25 @@
+package com.epam.rudenkov;
+
+public class NumberLength {
+	
+	public static void review(String[] args){
+		int max = 0;
+		for(int i = 0; i < args.length; i++){
+			for(int j = 0; j < args.length; j++){
+				String tempVar;
+				if(args[j].length() > args[i].length()){
+					tempVar = args[j];
+					args[i] = tempVar;
+				}
+			}
+		}
+		for(String param : args){
+			System.out.println(param);
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		review(args);
+	}
+}

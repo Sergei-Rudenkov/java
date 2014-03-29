@@ -1,0 +1,8 @@
+package com.epam.rudenkov;
+
+public abstract class Essence {
+
+abstract void toDie();
+abstract void toKill();
+
+}

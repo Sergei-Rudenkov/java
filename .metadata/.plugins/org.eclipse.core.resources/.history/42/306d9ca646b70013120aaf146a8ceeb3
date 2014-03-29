@@ -1,0 +1,21 @@
+package com.epam.rudenkov;
+
+public class NumberLength {
+	
+	public static void review(String[] args){
+		int max = 0;
+		String value = null;
+		for(int i = 0; i < args.length; i++){
+			if( args[i] != null &&  max < args[i].length()) {
+				max = args[i].length();
+				value = args[i]; 
+				args[i] = null;
+				System.out.println(max + "    " + value);
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		review(args);
+	}
+}

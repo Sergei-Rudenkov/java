@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+D:\Sergei_Rudenkov\workspace\.metadata\.plugins\org.eclipse.jdt.core
+3682741512.index
+4145717365.index
